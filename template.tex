@@ -1,0 +1,50 @@
+\documentclass[titlepage]{article}
+\usepackage{fontspec}
+\usepackage{lipsum}
+\usepackage{fullpage}
+\usepackage{nameref}
+\usepackage{textcomp}
+\usepackage{titling}
+
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+
+\usepackage{geometry}
+\geometry{
+  top=1in,
+  inner=0.5in,
+  outer=0.5in,
+  bottom=1.1in,
+  headheight=3ex,
+  headsep=2ex,
+}
+
+\setmainfont{VTPortableRemington}
+
+\title{Old Technical Manual}
+\author{HAL Ltd.}
+\date{1971-03-03}
+
+\fancyhf{}
+\setlength{\headheight}{15.6pt}
+\rhead{\rule[-2ex]{0pt}{2ex}\leftmark}
+\rfoot{\thepage\\\textcopyright \theauthor}
+\fancyhfoffset[LE]{6mm}
+
+\begin{document}
+\maketitle
+\tableofcontents
+\pagebreak
+
+\section{Introduction}
+\lipsum
+
+\subsection{Test}
+\lipsum
+
+\section{Instructions}
+\lipsum
+
+\section{Calling conventions}
+\lipsum
+\end{document}
