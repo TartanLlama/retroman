@@ -1,36 +1,39 @@
-\documentclass[titlepage]{article}
-\usepackage{fontspec}
-\usepackage{lipsum}
-\usepackage{fullpage}
-\usepackage{nameref}
-\usepackage{textcomp}
-\usepackage{titling}
-\usepackage{coffee}
+\documentclass[titlepage,12pt]{article}
 
-\usepackage{fancyhdr}
+\usepackage{fontspec} % For loading custom fonts
+\usepackage{lipsum}   % Lorem ipsum
+\usepackage{fullpage} % Smaller margins
+\usepackage{nameref}  % For referencing the current section in the header
+\usepackage{textcomp} % Copyright symbol
+\usepackage{titling}  % Access author information
+\usepackage{coffee}   % Coffee stains
+
+\usepackage{fancyhdr} % For fancy headers
 \pagestyle{fancy}
 
+% This allows setting of the header and footer sizes more easily
 \usepackage{geometry}
 \geometry{
   top=1in,
   inner=0.5in,
   outer=0.5in,
-  bottom=1.1in,
+  bottom=2in,
   headheight=3ex,
   headsep=2ex,
 }
 
-\setmainfont[Path=./]{vtRemingtonPortable}
+% Header and footer
+\fancyhf{}                                   % Clear header and footer
+\rhead{\leftmark}                            % Display section name in header
+\rfoot{\thepage\\\textcopyright \theauthor}  % Display page number and copyright in footer
+\fancyhfoffset[LE]{6mm}                      % Better header width
 
+\setmainfont[Path=./]{vtRemingtonPortable} % Set global font
+
+% Customise these
 \title{Old Technical Manual}
 \author{HAL Ltd.}
 \date{1971-03-03}
-
-\fancyhf{}
-\setlength{\headheight}{15.6pt}
-\rhead{\rule[-2ex]{0pt}{2ex}\leftmark}
-\rfoot{\thepage\\\textcopyright \theauthor}
-\fancyhfoffset[LE]{6mm}
 
 \begin{document}
 \maketitle
