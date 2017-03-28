@@ -5,6 +5,7 @@
 \usepackage{nameref}
 \usepackage{textcomp}
 \usepackage{titling}
+\usepackage{coffee}
 
 \usepackage{fancyhdr}
 \pagestyle{fancy}
@@ -19,7 +20,7 @@
   headsep=2ex,
 }
 
-\setmainfont{VTPortableRemington}
+\setmainfont[Path=./]{vtRemingtonPortable}
 
 \title{Old Technical Manual}
 \author{HAL Ltd.}
@@ -33,10 +34,12 @@
 
 \begin{document}
 \maketitle
+\cofeAm{0.7}{0.75}{2}{-200}{200}
 \tableofcontents
 \pagebreak
 
 \section{Introduction}
+\cofeBm{0.7}{1}{0}{0}{0}
 \lipsum
 
 \subsection{Test}
