@@ -1,4 +1,4 @@
-% The latex-coffee package. 
+% The latex-coffee package.
 % by Hanno Rein, Cambridge University
 % http://hanno-rein.de   hanno@hanno-rein.de
 %
@@ -11,7 +11,7 @@
 %
 % March, 2011
 % Adding more options and  compatible with pdflatex
-% by Luis Randez, IUMA, University of Zaragoza 
+% by Luis Randez, IUMA, University of Zaragoza
 % http://pcmap.unizar.es/~pilar/  randez@unizar.es
 %
 % May, 2012
@@ -27,6 +27,44 @@
 \ProcessKeyvalOptions*\relax
 
 \RequirePackage{tikz}
+
+\ifdefined\COFFEESTAINGRAYSCALE
+\definecolor{coffee1}{rgb}{0.71323531222,0.71323531222,0.71323531222}
+\definecolor{coffee2}{rgb}{0.62175295829,0.62175295829,0.62175295829}
+\definecolor{coffee3}{rgb}{0.58059610299,0.58059610299,0.58059610299}
+\definecolor{coffee4}{rgb}{0.49941961741,0.49941961741,0.49941961741}
+\definecolor{coffee5}{rgb}{0.40161177634,0.40161177634,0.40161177634}
+\definecolor{coffee6}{rgb}{0.26736079771,0.26736079771,0.26736079771}
+\definecolor{coffee7}{rgb}{0.13675294441,0.13675294441,0.13675294441}
+\definecolor{coffee8}{rgb}{0.79421962027,0.79421962027,0.79421962027}
+\definecolor{coffee9}{rgb}{0.7123411954,0.7123411954,0.7123411954}
+\definecolor{coffee10}{rgb}{0.61806668548,0.61806668548,0.61806668548}
+\definecolor{coffee11}{rgb}{0.58564707928,0.58564707928,0.58564707928}
+\definecolor{coffee12}{rgb}{0.49824706798,0.49824706798,0.49824706798}
+\definecolor{coffee13}{rgb}{0.40881177886,0.40881177886,0.40881177886}
+\definecolor{coffee14}{rgb}{0.2717255011,0.2717255011,0.2717255011}
+\definecolor{coffee15}{rgb}{0.15502353306,0.15502353306,0.15502353306}
+\definecolor{coffee16}{rgb}{0.88190588949,0.88190588949,0.88190588949}
+\definecolor{coffee17}{rgb}{0.83862745927,0.83862745927,0.83862745927}
+\definecolor{coffee18}{rgb}{0.92180000708,0.92180000708,0.92180000708}
+\definecolor{coffee19}{rgb}{0.85941177468,0.85941177468,0.85941177468}
+\definecolor{coffee20}{rgb}{0.83982353926,0.83982353926,0.83982353926}
+\definecolor{coffee21}{rgb}{0.72843923128,0.72843923128,0.72843923128}
+\definecolor{coffee22}{rgb}{0.73417648264,0.73417648264,0.73417648264}
+\definecolor{coffee23}{rgb}{0.64885100062,0.64885100062,0.64885100062}
+\definecolor{coffee24}{rgb}{0.63182354753,0.63182354753,0.63182354753}
+\definecolor{coffee25}{rgb}{0.54418824259,0.54418824259,0.54418824259}
+\definecolor{coffee26}{rgb}{0.53785882577,0.53785882577,0.53785882577}
+\definecolor{coffee27}{rgb}{0.46523922186,0.46523922186,0.46523922186}
+\definecolor{coffee28}{rgb}{0.43153334554,0.43153334554,0.43153334554}
+\definecolor{coffee29}{rgb}{0.38554510279,0.38554510279,0.38554510279}
+\definecolor{coffee30}{rgb}{0.35463137844,0.35463137844,0.35463137844}
+\definecolor{coffee31}{rgb}{0.29943137787,0.29943137787,0.29943137787}
+\definecolor{coffee32}{rgb}{0.25621961299,0.25621961299,0.25621961299}
+\definecolor{coffee33}{rgb}{0.20605883194,0.20605883194,0.20605883194}
+\definecolor{coffee34}{rgb}{0.17376078441,0.17376078441,0.17376078441}
+
+\else
 
 \definecolor{coffee1}{rgb}{0.80784315,0.68627453,0.60392159}
 \definecolor{coffee2}{rgb}{0.77254903,0.58039218,0.43921569}
@@ -62,7 +100,41 @@
 \definecolor{coffee32}{rgb}{0.68627453,0.08235294,0.02352941}
 \definecolor{coffee33}{rgb}{0.56470591,0.05882353,0.02352941}
 \definecolor{coffee34}{rgb}{0.47058824,0.05098039,0.02745098}
-
+\definecolor{coffee1}{rgb}{0.80784315,0.68627453,0.60392159}
+\definecolor{coffee2}{rgb}{0.77254903,0.58039218,0.43921569}
+\definecolor{coffee3}{rgb}{0.71764708,0.54509807,0.40392157}
+\definecolor{coffee4}{rgb}{0.67450982,0.44705883,0.30980393}
+\definecolor{coffee5}{rgb}{0.63921571,0.33725491,0.10980392}
+\definecolor{coffee6}{rgb}{0.57254905,0.16078432,0.01568628}
+\definecolor{coffee7}{rgb}{0.34509805,0.05490196,0.01176471}
+\definecolor{coffee8}{rgb}{0.86274511,0.7764706,0.70588237}
+\definecolor{coffee9}{rgb}{0.80784315,0.68627453,0.59607846}
+\definecolor{coffee10}{rgb}{0.7647059,0.58039218,0.42745098}
+\definecolor{coffee11}{rgb}{0.71764708,0.5529412,0.40784314}
+\definecolor{coffee12}{rgb}{0.67058825,0.44705883,0.30980393}
+\definecolor{coffee13}{rgb}{0.62352943,0.35294119,0.13333334}
+\definecolor{coffee14}{rgb}{0.5411765,0.18039216,0.03529412}
+\definecolor{coffee15}{rgb}{0.40000001,0.05882353,0.00784314}
+\definecolor{coffee16}{rgb}{0.98431373,0.8509804,0.77254903}
+\definecolor{coffee17}{rgb}{0.97254902,0.80000001,0.68627453}
+\definecolor{coffee18}{rgb}{0.98431373,0.90980393,0.81960785}
+\definecolor{coffee19}{rgb}{0.92941177,0.83529413,0.80000001}
+\definecolor{coffee20}{rgb}{0.96862745,0.80784315,0.66666669}
+\definecolor{coffee21}{rgb}{0.88627452,0.67450982,0.59215689}
+\definecolor{coffee22}{rgb}{0.96078432,0.67450982,0.44705883}
+\definecolor{coffee23}{rgb}{0.92941177,0.57254905,0.30588236}
+\definecolor{coffee24}{rgb}{0.95686275,0.56078434,0.14509805}
+\definecolor{coffee25}{rgb}{0.82745099,0.44313726,0.32156864}
+\definecolor{coffee26}{rgb}{0.93725491,0.42745098,0.05882353}
+\definecolor{coffee27}{rgb}{0.91764706,0.3137255,0.05882353}
+\definecolor{coffee28}{rgb}{0.82352942,0.3019608,0.07058824}
+\definecolor{coffee29}{rgb}{0.90196079,0.1882353,0.04705882}
+\definecolor{coffee30}{rgb}{0.81568629,0.17647059,0.0627451}
+\definecolor{coffee31}{rgb}{0.80000001,0.09803922,0.02352941}
+\definecolor{coffee32}{rgb}{0.68627453,0.08235294,0.02352941}
+\definecolor{coffee33}{rgb}{0.56470591,0.05882353,0.02352941}
+\definecolor{coffee34}{rgb}{0.47058824,0.05098039,0.02745098}
+\fi
 
 
 
